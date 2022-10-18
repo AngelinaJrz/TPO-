@@ -1,0 +1,80 @@
+
+body{
+    background-color:#adafb0;
+}
+.Logo{
+    position: absolute;
+    width: 133px;
+    height: 111px;
+}
+.container{
+    display: grid;
+    grid-template:100px 1fr 100px / 400px 1fr;
+    grid-template-areas: "header header"
+                         "left contenido"
+                         "footer footer";
+    grid-gap: 20px;
+    height: 100vh;
+}
+
+/*Parte de los navegadores / Botones*/
+.header{
+    grid-area: header;
+    margin-top: 10px;
+    background-color:#000;
+}
+li{
+    list-style-type: none;
+}
+.containerBotones{
+    display: grid;
+    gap: 50px 100px;
+    grid-template-columns: auto auto auto auto auto;
+}
+.containerBotones > div {
+    text-align: center;
+    font-size: 20px;
+}
+#menuBotones{
+    border-radius: 25px;
+    background-color: #e4e4e2;
+    padding: 15px;
+
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.Logo{
+    max-width: 100%;
+    height: auto;
+    left: 0px;
+    top: 4px;
+}
+
+/*Parte del texto section*/
+.left{
+    background-color: aqua;
+    grid-area:left;
+    /*Texto*/
+    text-align: center;
+    letter-spacing: 2px;
+    
+}
+
+.tituloSection{
+    font-size: 60px;
+}
+.subTituloSection{
+    font-size: 20px;
+}
+/*Parte de la imagen / aside*/
+.contenido{
+    grid-area:contenido;
+}
+
+
+/*Parte de los contectos o sociales / footer*/
+.footer{
+    grid-area: footer;
+}
