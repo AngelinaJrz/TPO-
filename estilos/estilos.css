@@ -9,7 +9,7 @@ body{
 }
 .container{
     display: grid;
-    grid-template:100px 1fr 100px / 400px 1fr;
+    grid-template:100px 1fr 100px / 600px 1fr;
     grid-template-areas: "header header"
                          "left contenido"
                          "footer footer";
@@ -21,7 +21,6 @@ body{
 .header{
     grid-area: header;
     margin-top: 10px;
-    background-color:#000;
 }
 li{
     list-style-type: none;
@@ -52,29 +51,87 @@ a{
     top: 4px;
 }
 
+
+/* Main dentro Section y Aside*/
+.containermain{
+    display: grid;
+    grid-template: 120px 1fr 120px / 700px 1fr;
+    grid-template-areas: "header header"
+                        "left contenido"
+                        "footer footer";
+    height: 100vh;
+    grid-gap: 20px;
+    align-content: center;
+    justify-content:space-between;
+}
 /*Parte del texto section*/
 .left{
-    background-color: aqua;
+    /* background-color: aqua; */
     grid-area:left;
+    padding:10px;
     /*Texto*/
     text-align: center;
-    letter-spacing: 2px;
-    
-}
+    letter-spacing: 2px; 
 
+}
 .tituloSection{
     font-size: 60px;
+
 }
 .subTituloSection{
     font-size: 20px;
+   
+}
+
+.containerTabla{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 20px;
+    /* grid-auto-rows: auto; */
+}
+.containerTabla > div{
+    border-radius: 20px;
+    background-color: #e4e4e2;
+    box-shadow: 0 0 10px;
 }
 /*Parte de la imagen / aside*/
 .contenido{
     grid-area:contenido;
+    margin-top: 80px;
+
+}
+.contenido > img{
+    border-radius: 25px;
+    box-shadow: 0 0 20px;
 }
 
-
 /*Parte de los contectos o sociales / footer*/
+.containerfooter{
+    display: grid;
+    grid-template: 120px 0px 50px  / 400px 1fr;
+    grid-template-areas: "header header"
+                        "left contenido"
+                        "footer footer";
+    grid-gap:-10px;
+ margin-top: -40px
+}
 .footer{
-    grid-area: footer;
+    grid-area:footer;
+    width: 97vw;
+}
+.footertexto{
+    margin: auto auto auto 500px;
+    font-family: Verdana, BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.iconossociles1{
+    float: left;
+    letter-spacing:50px;
+    margin-left: 50px;
+}
+.iconossociles2{
+    float: right;
+    letter-spacing:50px;
+    margin-top: -60px;
+    margin-right: 100px;
 }
