@@ -22,9 +22,6 @@ body{
     grid-area: header;
     margin-top: 10px;
 }
-li{
-    list-style-type: none;
-}
 .containerBotones{
     display: grid;
     gap: 50px 100px;
@@ -51,7 +48,7 @@ a{
     top: 4px;
 }
 
-
+                        /*CSS  INDEX*/
 /* Main dentro Section y Aside*/
 .containermain{
     display: grid;
@@ -63,31 +60,27 @@ a{
     grid-gap: 20px;
     align-content: center;
     justify-content:space-between;
+    margin:20px auto auto 90px;
 }
 /*Parte del texto section*/
 .left{
-    /* background-color: aqua; */
     grid-area:left;
     padding:10px;
     /*Texto*/
     text-align: center;
     letter-spacing: 2px; 
-
 }
 .tituloSection{
     font-size: 60px;
-
 }
 .subTituloSection{
     font-size: 20px;
-   
 }
 
 .containerTabla{
     display: grid;
     grid-template-columns: repeat(2, 300px);
     grid-gap: 20px;
-    /* grid-auto-rows: auto; */
 }
 .containerTabla > div{
     border-radius: 20px;
@@ -98,11 +91,20 @@ a{
 .contenido{
     grid-area:contenido;
     margin-top: 80px;
-
+    /*Texto*/
+    text-align: center;
+    letter-spacing: 2px; 
 }
 .contenido > img{
     border-radius: 25px;
     box-shadow: 0 0 20px;
+    width: 100%;
+}
+.contenido > div{
+    border-radius: 15px;
+    background-color: #e4e4e2;
+    box-shadow: 0 0 10px;
+    padding:5px;
 }
 
 /*Parte de los contectos o sociales / footer*/
@@ -113,7 +115,7 @@ a{
                         "left contenido"
                         "footer footer";
     grid-gap:-10px;
- margin-top: -40px
+ 
 }
 .footer{
     grid-area:footer;
@@ -152,3 +154,47 @@ a{
       width: 100%;
     }
   }
+
+
+                        /*CSS  SERVICIOS*/
+.sectionServicios{
+    width: 90vw;
+    height: 100vh;
+    margin:auto auto auto -40px;
+}
+.tituloMain1{
+    font-size: 40px;
+    margin: auto;
+}
+.tituloMain{
+    font-size: 60px;
+    text-align: center;
+}
+.containerSection{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: 500px;
+    grid-gap: 30px;
+    justify-content:space-evenly;
+}
+.containerSection > div{
+    background-color: #e4e4e2;
+    box-shadow: 0 0 10px;
+}
+.containerSection > div > h2{
+ text-align: center;
+ font-weight: bold;
+ letter-spacing: 2px;
+ line-height: 30px;
+}
+.containerSection > div > img{
+    display: block;
+    margin: 10px auto;
+
+}
+.textoTabla{
+    font-family: 'Noto Serif', serif;
+    letter-spacing: 2px;
+    line-height: 50px;
+    font-size: 15px;
+}
