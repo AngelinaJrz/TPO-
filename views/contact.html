@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../estilos/form.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+    </head>
+    <body>
+        <header>
+            <ul>
+            <li>
+              <a href="../views/index.html">Inicio</a></li>
+            </li>
+            <li>
+                <a href="../views/aboutus.html">Sobre nosotros</a></li>
+            </li>
+            <li>
+                <a href="../views/services.html">Servicios</a></li>
+            </li>
+            <li>
+                <a href="../views/contact.html">Contacto</a></li>
+            </li>
+            </ul>
+        </header>
+
+        <h1>Envíenos su consulta</h1>
+
+        <div 
+            id="mensaje-enviado" 
+            class="alert alert-success" 
+            role="alert"
+            hidden
+        >
+            Mensaje enviado exitosamente!
+        </div>
+
+        <div class="container">
+            <form id="basic-form">
+
+                <label for="fname">Nombre </label>
+                <span>(obligatorio, al menos 3 caracteres)</span>
+                <input  
+                    type="text" 
+                    id="fname" 
+                    name="fname" 
+                    placeholder="Ingrese su nombre..."
+                    minlength="3"
+                    maxlength="30"
+                    required
+                >
+
+                <br />
+
+                <label for="lname">Apellido</label>
+                <span>(obligatorio, al menos 3 caracteres)</span>
+                <input  
+                    type="text" 
+                    id="lname" 
+                    name="lname" 
+                    placeholder="Ingrese su apellido..."
+                    minlength="3"
+                    maxlength="30"
+                    required
+                >
+
+                <br />
+
+                <label for="email">Email </label>
+                <span>(obligatorio)</span>
+                <input  
+                    type="text"
+                    id="email" 
+                    name="email" 
+                    placeholder="Ingrese su email..."
+                    email="true"
+                    required
+                >
+
+                <br />
+
+                <label for="subject">Consulta </label>
+                <span>(required)</span>
+                <input 
+                    type="text"  
+                    id="subject" 
+                    name="subject" 
+                    placeholder="Escriba su consulta..." 
+                    required
+                    maxlength="200"
+                >
+
+                <br />
+                
+                <button 
+                    id="enviar"
+                    type="button" 
+                    class="btn btn-primary" 
+                    value="Enviar"> Enviar
+                </button>
+
+            </form>
+        </div>
+
+        <footer>
+          <p>Rivas Umwelt - 2022</p>
+        </footer>
+
+        <script src="../assets/form.js"></script>
+
+    </body>
+</html>
