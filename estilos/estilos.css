@@ -135,3 +135,20 @@ a{
     margin-top: -60px;
     margin-right: 100px;
 }
+#moving {
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;    
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }

@@ -3,39 +3,35 @@
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../assets/js/example.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
-    <link rel="icon" href="/img/logo1.png">
-    <link rel="stylesheet" href="/estilos/estilos.css">
+    <link rel="icon" href="../img/logo1.png">
+    <link rel="stylesheet" href="../estilos/estilos.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <script src="../assets/api_co2.js"></script>
     <title>Rivas Umwelt - ;)</title>
 </head>
 
 <body class="container">
     <header class="header">
         <nav>
-
             <div class="containerBotones">
-                <div><img class="Logo" src="/img/logo1.png"></div>
-                <div id="menuBotones"><a href="../views/index.html">Inicio</a></div>
-                <div id="menuBotones"><a href="../views/aboutus.html">Sobre nosotros</a></div>
-                <div id="menuBotones"><a href="../views/services.html">Servicios</a></div>
-                <div id="menuBotones"><a href="../views/contact.html">Contacto</a></div>
+                <div><img class="Logo" src="../img/logo1.png"></div>
+                <div id="menuBotones"><a href="index.html">Inicio</a></div>
+                <div id="menuBotones"><a href="aboutus.html">Sobre nosotros</a></div>
+                <div id="menuBotones"><a href="services.html">Servicios</a></div>
+                <div id="menuBotones"><a href="contact.html">Contacto</a></div>
             </div>
-
         </nav>
-
     </header>
     
     <main class="containermain">
-
         <aside class="contenido">
             <br>
-            <img src="/img/ImagenPrincipalIndex.JPG" alt="" srcset=""/>
+            <img src="../img/ImagenPrincipalIndex.JPG" alt="" srcset=""/>
         </aside>
 
         <section class="left">
@@ -52,15 +48,27 @@
                 <script async src="https://app1.weatherwidget.org/js/?id=ww_074bafbaf3ae4"></script>
                 </div>
 
-                <div> <h3> Emisiones de CO2</h3>
+                <div> <h3> Pronóstico </h3>
                     <iframe
                     src="https://www.meteoblue.com/en/weather/widget/daily?geoloc=detect&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&winddirection=0&winddirection=1&uv=0&humidity=0&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&spot=1&pressure=0&layout=light"
                     frameborder="0" scrolling="NO" allowtransparency="true"
                     sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
                     style="width: 216px; height: 420px"></iframe>
                 </div>
+
+                <div> <h3>Emisiones de CO2</h3>
+                    <select id="result1" name="result1"></select>   
+                    <div id="result2" name="result2"></div>                
+                </div>
+
+                <div>
+                    <h3>GRAN ANIMACIÓN AQUÍ: </h3>
+                    <div id="moving" name="moving"> APROBANOS PROFE!!! :) </div>
+                </div>
+                
             </article>
-        </section>
+            
+        </section>        
     </main>
 <br>
     <footer class="containerfooter">
@@ -68,10 +76,10 @@
             
             <div class="iconossociles1">
                 <a href="consultas@rivasumwelt.com.ar" target="_blank">
-                    <img src="/img/email.png" alt="Icono email" width="40"/>
+                    <img src="../img/email.png" alt="Icono email" width="40"/>
                     </a>
                <a href="https://www.facebook.com/rivas.umwelt.7" target="_blank">
-                <img src="/img/facebook.png" alt="Icono facebook" width="40"/>
+                <img src="../img/facebook.png" alt="Icono facebook" width="40"/>
                 </a> 
             </div>
      
@@ -84,13 +92,12 @@
             <div class="iconossociles2" >
           
                <a href="https://twitter.com/angelin82805128" target="_blank">
-                <img src="/img/signo-de-twitter.png" alt="Icono twitter" width="40"/>
+                <img src="../img/signo-de-twitter.png" alt="Icono twitter" width="40"/>
                 </a>
                <a href="https://www.linkedin.com/in/angelina-ju%C3%A1rez-3aa83b120/" target="_blank">
-                <img src="/img/linkedin.png" alt="Icono linkedin" width="40"/>
+                <img src="../img/linkedin.png" alt="Icono linkedin" width="40"/>
             </a>
-            </div>
-            
+            </div>          
 		
       
         </div>
