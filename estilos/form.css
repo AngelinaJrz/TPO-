@@ -31,6 +31,7 @@ input[type=text], select, textarea {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
   }
 
   label.error.fail-alert {
