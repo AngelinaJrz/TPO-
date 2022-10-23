@@ -117,26 +117,31 @@ a{
     grid-gap:-10px;
  
 }
+
 .footer{
     grid-area:footer;
     width: 97vw;
 }
+
 .footertexto{
     margin: auto auto auto 500px;
     font-family: Verdana, BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 .iconossociles1{
     float: left;
     letter-spacing:50px;
     margin-left: 50px;
 }
+
 .iconossociles2{
     float: right;
     letter-spacing:50px;
     margin-top: -60px;
     margin-right: 100px;
 }
+
 #moving {
     animation-duration: 5s;
     animation-name: slidein;
@@ -158,23 +163,24 @@ a{
 
                         /*CSS  SERVICIOS*/
 .sectionServicios{
-    width: 90vw;
+    width: 97vw;
     height: 100vh;
-    margin:auto auto auto -40px;
 }
+
 .tituloMain1{
     font-size: 40px;
-    margin: auto;
 }
+
 .tituloMain{
     font-size: 60px;
     text-align: center;
 }
+
 .containerSection{
     display: grid;
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, 300px);
     grid-template-rows: 500px;
-    grid-gap: 30px;
+    grid-gap: 20px;
     justify-content:space-evenly;
 }
 .containerSection > div{
@@ -195,6 +201,24 @@ a{
 .textoTabla{
     font-family: 'Noto Serif', serif;
     letter-spacing: 2px;
-    line-height: 50px;
+    line-height: 35px;
     font-size: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .containerSection {
+        grid-template-columns: repeat(2, 400px);
+        grid-template-rows: 500px;
+        grid-gap: 30px;
+        justify-content:space-evenly;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .containerSection {
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: 500px;
+        grid-gap: 30px;
+        justify-content:space-evenly;
+    }
 }
